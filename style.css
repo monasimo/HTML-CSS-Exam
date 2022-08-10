@@ -188,7 +188,7 @@ footer {
 }
 
 .color {
-    background-image: url(file:///Users/mona/Desktop/CodeAcademy/KONTROLINIS/assets/background.svg);
+    background-image: url(background.svg);
     height: 60vh;
     background-repeat: no-repeat;
     margin: 0 5%;
