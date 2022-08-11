@@ -25,8 +25,11 @@ h1 {
 }
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 2.8em;
+
+    /* font-size: 9vh; */
 }
+
 
 h3 {
     font-size: 1rem;
@@ -37,8 +40,8 @@ h3 {
 }
 
 h4 {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 4vh;
+    /* line-height: 1; */
 }
 
 p {
@@ -106,51 +109,6 @@ p {
     transform: rotate(-405deg);
 }
   
-@media (max-width: 600px) {
-        .menu-button-container {
-        display: flex;
-    }
-        
-    .menu {
-        position: absolute;
-        top: 0;
-        margin-top: 50px;
-        left: 0;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #menu-toggle ~ .menu li {
-        height: 0;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-
-    #menu-toggle:checked ~ .menu li {
-        height: 2.5em;
-        padding: 0.5em;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-    }
-
-    .menu > li {
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0.5em 0;
-        width: 100%;
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
-    }
-
-    .menu > li:not(:last-child) {
-        border-bottom: 1px solid #444;
-    }
-}
-  
 .top-nav,
 .footer-bottom {
     display: flex;
@@ -163,7 +121,7 @@ p {
 header.top-nav,
 section,
 footer {
-    margin: 5% 5% 1% 8%;
+    margin: 5% 5% 1% 5%;
 }
 
 .menu a {
@@ -175,7 +133,7 @@ footer {
     grid-template-columns: 2fr 1fr;
     padding-bottom: 15%;
     max-width: 100%;
-    margin: 5vh;
+    margin: 5vh 5%;
 }
 
 .button {      
@@ -188,7 +146,7 @@ footer {
 }
 
 .color {
-    background-image: url(background.svg);
+    background-image: url("../assets/background.svg");
     height: 60vh;
     background-repeat: no-repeat;
     margin: 0 5%;
@@ -324,12 +282,61 @@ font-size: 0.7rem;
 
 @media screen and (max-width: 600px) {
 
+    h2 {
+        font-size: 3em;
+    }
+
+    h4 {
+        font-size: 1em;
+    }
+
+    .menu-button-container {
+        display: flex;
+    }
+        
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked ~ .menu li {
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .menu > li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
 
     .sign-up.down {
         padding-top: 10%;
         border-top: 2px solid rgb(241, 241, 241);
         border-bottom: 2px solid rgb(241, 241, 241);
-        padding-bottom: 0;
         }
 
     div.sign.left {
@@ -414,8 +421,8 @@ font-size: 0.7rem;
         object-fit: contain;
         position: absolute;
         z-index: 1;
-        left: 29em;
-        top: 9em;
+        left: 46%;
+        top: 30%;
         overflow: hidden;
     }
 
@@ -426,7 +433,7 @@ font-size: 0.7rem;
     }
 
     .right img {
-        max-width: 100%;
+        max-width: 92%;
     }
 
     .sign .right {
@@ -435,12 +442,14 @@ font-size: 0.7rem;
     }
 
     .color {
-        background-image: url(./assets/background.svg);
-        background-size: 100%;
+        background-image: url("../assets/background.svg");
         background-repeat: no-repeat;
+        background-size: 100%;
         margin: 0 5%;
-        padding-top: 5%;
+        /* padding-top: 5%; */
     }
+
+
 
     body section.icons {
         display: grid;
